@@ -3,4 +3,15 @@
   display: flex;
   justify-content: space-between;
   margin: 30px auto;
+
+  @media screen and (max-width: 800px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    margin: 0px auto;
+
+    .sign-in {
+      margin-bottom: 20px;
+    }
+  }
 }
