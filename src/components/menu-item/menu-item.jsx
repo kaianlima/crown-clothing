@@ -5,8 +5,12 @@ import "./menu-item.scss";
 
 const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
   <div
-    className={`${size} menu-item`}
+    className={`${size !== undefined ? size + " " : ""}menu-item `}
     onClick={() => history.push(`${match.url}${linkUrl}`)}
+    tabIndex="0"
+    onKeyDown={(event) => {
+      if (event.keyCode === 13) history.push(`${match.url}${linkUrl}`);
+    }}
   >
     <div
       className="background-image"
