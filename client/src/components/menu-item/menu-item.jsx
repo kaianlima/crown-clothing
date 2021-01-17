@@ -8,7 +8,7 @@ const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
     className={`${size !== undefined ? size + " " : ""}menu-item `}
     onClick={() => history.push(`${match.url}${linkUrl}`)}
     tabIndex="0"
-    onKeyDown={(event) => {
+    onKeyUp={(event) => {
       if (event.keyCode === 13) history.push(`${match.url}${linkUrl}`);
     }}
   >
