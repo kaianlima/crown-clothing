@@ -33,9 +33,12 @@ const SignIn = ({ emailSignInStart }) => {
 
   return (
     <div className="sign-in">
-      <h2>I already have an account</h2>
-      <span>Sign in with your email and password</span>
-
+      <div className="sign-in-text">
+        <h2 className="title">I already have an account</h2>
+        <span className="sign-in-text-details">
+          Sign in with your email and password
+        </span>
+      </div>
       <form onSubmit={handleSubmit}>
         <FormInput
           name="email"
