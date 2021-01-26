@@ -13,7 +13,7 @@ E-commerce Progressive Web app, mobile-friendly, with features such as:
 - Mock pay with Stripe
 
 Deployed site can be accessed on
-[CROWN Clothing Demo)](https://crown-demo-live.herokuapp.com)
+[CROWN Clothing Demo](https://crown-demo-live.herokuapp.com)
 
 ## Technologies
 
@@ -35,7 +35,9 @@ In details:
 
 ## Setup
 
-In base and client folder, run `npm install`
+In base and client folder, run
+
+### `npm install`
 
 To run both client and server, enter
 
